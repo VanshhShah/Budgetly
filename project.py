@@ -170,7 +170,7 @@ def main():
     try:
         if args.command == "add":
             expense = add_expense(args.amount, args.category, args.description, args.date)
-            print(f"Added: ₹{expense["amount"]:.2f} | {expense["category"]} | {expense["description"]} | {expense["date"]}")
+            print(f"Added: ₹{expense[\"amount\"]:.2f} | {expense["category"]} | {expense["description"]} | {expense["date"]}")
 
         elif args.command == "summary":
             expenses = load_expenses()
